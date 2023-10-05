@@ -15,7 +15,6 @@
 - [최소 지식 원리(데메테르 규칙)](#최소-지식-원리(데메테르-규칙))
 - [상속 관계보다 포함 관계를 선호해라](#상속-관계보다-포함-관계를-선호해라)
 - [할리우드 원칙](#할리우드-원칙)
-<hr/>
 
 ### 패턴
 - [1. Strategy Pattern](https://github.com/kiki9484/Note/tree/main/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84/Strategy%20Pattern)
