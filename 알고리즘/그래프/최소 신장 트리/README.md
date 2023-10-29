@@ -36,19 +36,19 @@ BFS(G, s)
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u.d = $\infty$
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u.$\phi$ = NULL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u. $\pi$ = NULL
   
 &nbsp;&nbsp;&nbsp;&nbsp;s.color = GRAY
 		
 &nbsp;&nbsp;&nbsp;&nbsp;s.d = 0
 		
-&nbsp;&nbsp;&nbsp;&nbsp;s.$\phi$ = NULL
+&nbsp;&nbsp;&nbsp;&nbsp;s. $\pi$ = NULL
 		
-&nbsp;&nbsp;&nbsp;&nbsp;Q = $\phi$
+&nbsp;&nbsp;&nbsp;&nbsp;Q = $\pi$
 		
 &nbsp;&nbsp;&nbsp;&nbsp;Enqueue(Q, s)
 		
-&nbsp;&nbsp;&nbsp;&nbsp;while Q $\not =$ $\phi$
+&nbsp;&nbsp;&nbsp;&nbsp;while Q $\not = $\pi$
 		
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u = Dequeue(Q)
 			
@@ -60,7 +60,7 @@ BFS(G, s)
 				
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v.d = u.d + 1
 				
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v.$\pi$ = u
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v. $\pi$ = u
 				
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enqueue(Q, v)
 		
@@ -108,8 +108,8 @@ G = (V, E)를 방향 또는 무방향 그래프라 하고, BFS를 그래프 G에
 그러므로, v.d값이 다시 변하지 않고 귀납 가정이 유지된다.
 
 **보조정리 3.**
-
-그래프 G = (V, E)에 대해 BFS를 수행하면서 큐 Q는 정점 <$v_1$, $v_2$, …, $v_r$>을 가지고, $v_1$은 Q의 머리에, $v_r$은 Q의 꼬리에 위치한다고 가정하자. 
+ 
+그래프 G = (V, E)에 대해 BFS를 수행하면서 큐 Q는 정점 < $v_1$, $v_2$, …, $v_r$ >을 가지고, $v_1$은 Q의 머리에, $v_r$은 Q의 꼬리에 위치한다고 가정하자. 
 
 i = 1, 2, …, r-1일 때, $v_r.d \le v_1.d+1$이고, $v_i.d \le v_{i+1}.d$다.
 
