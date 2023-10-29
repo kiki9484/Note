@@ -1,7 +1,5 @@
 # Note
 
-### MD
-
 ### Front End
   * [프론트앤드 기초](https://github.com/kiki9484/Note/tree/main/Front%20End)
 ### Java
@@ -12,4 +10,4 @@
 ### Database
 
 ### Algorithms
-  
+   * [알고리즘](https://github.com/kiki9484/Note/tree/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
